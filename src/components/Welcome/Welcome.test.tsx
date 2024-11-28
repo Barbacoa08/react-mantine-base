@@ -1,4 +1,5 @@
 import { render, screen } from '@test-utils';
+import { axe } from 'jest-axe';
 import { Welcome } from './Welcome';
 
 describe('Welcome component', () => {
@@ -8,5 +9,11 @@ describe('Welcome component', () => {
       'href',
       'https://mantine.dev/guides/vite/'
     );
+  });
+
+  it('passes basic axe compliance', async () => {
+    const { container } = render(<Welcome />);
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });
