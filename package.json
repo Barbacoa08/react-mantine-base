@@ -5,6 +5,7 @@
 	"version": "0.0.0",
 	"scripts": {
 		"all": "pnpm i && pnpm build && pnpm test",
+		"github": "pnpm i && pnpm lint && pnpm build && pnpm vitest",
 		"dev": "vite --open",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
