@@ -8,3 +8,7 @@
     font-size: rem(50px);
   }
 }
+
+.margin-top {
+  margin-top: rem(40px);
+}

@@ -1,0 +1,6 @@
+.color-scheme-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: rem(40px);
+}
