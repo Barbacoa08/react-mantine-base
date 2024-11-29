@@ -1,11 +1,10 @@
-import { useContext } from "react";
-import { GlobalContext } from "src/GlobalContext";
+import { useGlobalContext } from "src/GlobalContext";
 import { Anchor, Text, Title } from "@mantine/core";
 
 import "./Welcome.css";
 
 export const Welcome = () => {
-  const { name } = useContext(GlobalContext);
+  const { name } = useGlobalContext();
 
   return (
     <>

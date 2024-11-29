@@ -1,4 +1,4 @@
-import { GlobalContext } from "src/GlobalContext";
+import { GlobalContextProvider } from "src/GlobalContext";
 import { Router } from "src/Router";
 import { theme } from "src/theme";
 import { MantineProvider } from "@mantine/core";
@@ -8,9 +8,9 @@ import "@mantine/core/styles.css";
 export default function App() {
   return (
     <MantineProvider theme={theme}>
-      <GlobalContext.Provider value={{ name: "Mantine" }}>
+      <GlobalContextProvider initialValue={{ name: "Mantine" }}>
         <Router />
-      </GlobalContext.Provider>
+      </GlobalContextProvider>
     </MantineProvider>
   );
 }
