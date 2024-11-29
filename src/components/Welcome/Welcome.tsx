@@ -27,6 +27,10 @@ export const Welcome = () => {
       <Text ta="center" className="margin-top">
         To learn more about this project visit <Anchor href="/about">About</Anchor>
       </Text>
+
+      <Text ta="center" className="margin-top">
+        Want to see the checkout page? Visit <Anchor href="/checkout">Checkout</Anchor>
+      </Text>
     </>
   );
 };

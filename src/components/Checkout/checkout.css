@@ -1,0 +1,48 @@
+.checkout-container {
+  margin: 2rem;
+
+  h2 {
+    margin-top: 3rem;
+  }
+
+  .groceries-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5rem;
+
+    .groceries-type-container {
+      display: flex;
+      gap: 1rem;
+
+      .grocery-button-clicked {
+        border: 1px solid aliceblue;
+      }
+    }
+  }
+
+  .cart-container {
+    margin: 1rem;
+    padding: 0 3rem 3rem;
+
+    &:has(.empty) {
+      border: 1px solid red;
+    }
+
+    &:has(.groceries-list) {
+      border: 1px solid aliceblue;
+    }
+
+    .submit-order-container {
+      margin: 0 1rem;
+
+      p {
+        margin: unset;
+      }
+
+      .order-selection {
+        font-weight: bolder;
+      }
+    }
+  }
+}
