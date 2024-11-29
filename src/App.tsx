@@ -1,13 +1,16 @@
-import "@mantine/core/styles.css";
-
+import { GlobalContext } from "src/GlobalContext";
+import { Router } from "src/Router";
+import { theme } from "src/theme";
 import { MantineProvider } from "@mantine/core";
-import { Router } from "./Router";
-import { theme } from "./theme";
+
+import "@mantine/core/styles.css";
 
 export default function App() {
   return (
     <MantineProvider theme={theme}>
-      <Router />
+      <GlobalContext.Provider value={{ name: "Mantine" }}>
+        <Router />
+      </GlobalContext.Provider>
     </MantineProvider>
   );
 }

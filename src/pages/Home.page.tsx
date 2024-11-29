@@ -1,4 +1,4 @@
-import { ColorSchemeToggle, Welcome } from "@/components/";
+import { ColorSchemeToggle, Welcome } from "components/index";
 
 export const HomePage = () => {
   return (
